@@ -1,0 +1,22 @@
+{
+  "name": "print-coveralls",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "print-coveralls": "./bin/coveralls.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daybrush/print-coveralls.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/daybrush/print-coveralls/issues"
+  },
+  "homepage": "https://github.com/daybrush/print-coveralls#readme"
+}
