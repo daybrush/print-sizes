@@ -21,8 +21,6 @@ lines.now = lines.all.filter(text => text.indexOf(",0") === -1);
 branches.all = texts.filter(text => /^BRDA/g.test(text));
 branches.now = branches.all.filter(text => !/,0$/g.test(text));
 
-console.log(branches.now.length, branches.all.length);
-
 lines.now = lines.now.length;
 lines.all = lines.all.length;
 branches.now = branches.now.length;
@@ -42,7 +40,7 @@ Branches     : 58.1% ( 423/728 )
 Functions    : 59.76% ( 49/82 )
 Lines        : 66.23% ( 806/1217 ) 
 */
-console.log("=============================== Coverage summary ===============================");
+console.log("=============================== Coveralls summary ===============================");
 console.log("\x1b[33m\x1B[1m" + `Branches      : ${branches.percent}% (${branches.now} / ${branches.all})`);
 console.log("\x1b[33m\x1B[1m" + `Lines         : ${lines.percent}% (${lines.now} / ${lines.all})`);
 console.log("\x1b[33m\x1B[1m" + `Coverage      : ${coverage.percent}% (${coverage.now} / ${coverage.all})`);
