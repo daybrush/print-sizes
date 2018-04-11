@@ -1,4 +1,4 @@
-# print-coveralls
+# print-coveralls [![npm version](https://badge.fury.io/js/print-coveralls.svg)](https://badge.fury.io/js/print-coveralls)
 
 ## Installation
 ```
