@@ -10,14 +10,22 @@ $ npm install print-coveralls
 ```
 print-coveralls
 print-coveralls --path=./coverage/lcov.info
-print-coveralls --path=./coverage/lcov.info --detail=high,medium,low
+print-coveralls --detail=high,medium,low
+print-coveralls --detail=medium,low
+print-coveralls --sort=asc
+print-coveralls --sort=desc
 ```
 
 * path : coverage information's path.
 * detail : show files' coverage to the (high, medium, low)
+* sort : Sort files by coverage. (none, asc, desc)
 
 ## Output
 * Coverage is coveralls's coverage
+<p align="middle">
+	<img src=https://raw.githubusercontent.com/daybrush/print-coveralls/HEAD/assets/summary.gif style="max-width: 100%;">
+</p>
+
 ```
 =============================== Coveralls summary ===============================
 Branches      : 58.1% (423 / 728)

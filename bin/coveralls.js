@@ -79,8 +79,16 @@ console.log("=============================== Coveralls summary =================
 console.log("\x1b[33m\x1B[1m" + `Branches      : ${branches.percent}% (${branches.now} / ${branches.all})`);
 console.log("\x1b[33m\x1B[1m" + `Lines         : ${lines.percent}% (${lines.now} / ${lines.all})`);
 console.log("\x1b[33m\x1B[1m" + `Coverage      : ${coverage.percent}% (${coverage.now} / ${coverage.all})`);
-console.log("\x1b[0m" + "================================================================================");
-text.split("SF:").map(t => getCoverage(t)).forEach(({filename, coverage}) => {
+console.log("\x1b[0m" + "=================================================================================");
+const files = text.split("SF:").map(t => getCoverage(t));
+
+if (info.sort === "asc") {
+	files.sort((a,b) => a.coverage.percent < b.coverage.percent ? -1 : 1);
+} else if (info.sort === "desc") {
+	files.sort((a,b) => a.coverage.percent > b.coverage.percent ? -1 : 1);
+}
+
+files.forEach(({filename, coverage}) => {
 	if (!coverage.all) {
 		return;
 	}
@@ -103,6 +111,8 @@ text.split("SF:").map(t => getCoverage(t)).forEach(({filename, coverage}) => {
 			return;
 		}
 	}
-	console.log("\x1b[0m\x1B[1m" + `${filename.padEnd(length + 10)}: ${color}${percent}% (${coverage.now} / ${coverage.all})`);
+	const margin = new Array(length - filename.length + 10).fill(" ").join("");
+
+	console.log("\x1b[0m\x1B[1m" + `${filename + margin}: ${color}${percent}% (${coverage.now} / ${coverage.all})`);
 });
-console.log("\x1b[0m" + "================================================================================");
+console.log("\x1b[0m" + "=================================================================================");
