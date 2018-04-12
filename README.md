@@ -23,7 +23,7 @@ print-coveralls --sort=desc
 ## Output
 * Coverage is coveralls's coverage
 <p align="middle">
-	<img src=https://raw.githubusercontent.com/daybrush/print-coveralls/HEAD/assets/summary.gif style="max-width: 100%;">
+	<img src="https://raw.githubusercontent.com/daybrush/print-coveralls/master/assets/summary.png" style="max-width: 100%;">
 </p>
 
 ```
