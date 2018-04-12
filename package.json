@@ -1,6 +1,6 @@
 {
   "name": "print-coveralls",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -11,6 +11,7 @@
   },
   "keywords": [
     "coveralls",
+    "coverage",
     "print",
     "summary",
     "lcov.info"
