@@ -9,12 +9,18 @@
   "bin": {
     "print-coveralls": "./bin/coveralls.js"
   },
+  "keywords": [
+    "coveralls",
+    "print",
+    "summary",
+    "lcov.info"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/daybrush/print-coveralls.git"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/daybrush/print-coveralls/issues"
   },
