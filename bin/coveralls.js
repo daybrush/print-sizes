@@ -95,12 +95,12 @@ files.forEach(({filename, coverage}) => {
 	let color = "";
 	const percent = coverage.percent;
 
-	if (percent > 80) {
+	if (percent > 90) {
 		color = "\x1b[32m";
 		if (!~detail.indexOf("high")) {
 			return;
 		}
-	} else if (percent > 60) {
+	} else if (percent > 70) {
 		color = "\x1b[33m";
 		if (!~detail.indexOf("medium")) {
 			return;

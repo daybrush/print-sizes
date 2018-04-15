@@ -1,6 +1,6 @@
 {
   "name": "print-coveralls",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "print coveralls' coverage and files' coverage",
   "keywords": [
     "coveralls",
