@@ -32,8 +32,8 @@ const list = fs.readdirSync(path.resolve(dir, info.path)).map(file => {
 
 const length = list.reduce((v, [filename]) => Math.max(v, filename.length), 0);
 
-const line1 = new Array(length).fill("=").join("");
-const line2 = new Array(length  * 2 + 13).fill("=").join("");
+const line1 = new Array(parseInt(length / 2 + 8)).fill("=").join("");
+const line2 = new Array(length  + 28).fill("=").join("");
 
 console.log(`${line1} Print Sizes ${line1}`);
 
