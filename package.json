@@ -1,6 +1,6 @@
 {
   "name": "print-sizes",
-  "version": "0.0.1-rc2",
+  "version": "0.0.1",
   "description": "Print file sizes",
   "keywords": [
     "sizes",
@@ -8,7 +8,9 @@
     "print",
     "summary",
     "filesize",
-    "dist"
+    "dist",
+    "print-size",
+    "print-sizes"
   ],
   "main": "index.js",
   "scripts": {
