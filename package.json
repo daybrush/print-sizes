@@ -1,7 +1,7 @@
 {
   "name": "print-sizes",
-  "version": "0.0.2",
-  "description": "Print file sizes",
+  "version": "0.0.3",
+  "description": "Prints a list of files in the directory.",
   "keywords": [
     "sizes",
     "dist",

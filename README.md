@@ -1,6 +1,6 @@
 # print-sizes [![npm version](https://badge.fury.io/js/print-sizes.svg)](https://badge.fury.io/js/print-sizes)
 
-Pirnt file sizes in path
+Prints a list of files in the directory.
 
 ## Installation
 ```
@@ -18,7 +18,7 @@ print-sizes --include=\\.js
 
 
 ## Output
-* Pirnt file sizes in path
+
 <img src="https://raw.githubusercontent.com/daybrush/print-sizes/master/assets/summary.png" style="max-width: 100%;">
 
 ```
