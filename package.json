@@ -1,31 +1,35 @@
 {
-  "name": "print-coveralls",
-  "version": "1.2.1",
-  "description": "print coveralls' coverage and files' coverage",
+  "name": "print-sizes",
+  "version": "0.0.1-rc2",
+  "description": "Print file sizes",
   "keywords": [
-    "coveralls",
-    "coverage",
+    "sizes",
+    "dist",
     "print",
     "summary",
-    "lcov.info"
+    "filesize",
+    "dist"
   ],
   "main": "index.js",
   "scripts": {
-    "test": "node ./bin/coveralls.js",
-    "test2": "node ./bin/coveralls.js --detail=low --sort=asc"
+    "test": "node ./bin/sizes.js",
+    "test2": "node ./bin/sizes.js dist/ --external=.min"
   },
   "bin": {
-    "print-coveralls": "./bin/coveralls.js"
+    "print-sizes": "./bin/sizes.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/daybrush/print-coveralls.git"
+    "url": "git+https://github.com/daybrush/print-sizes.git"
   },
   "readme": "README.md",
   "author": "Daybrush",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/daybrush/print-coveralls/issues"
+    "url": "https://github.com/daybrush/print-sizes/issues"
   },
-  "homepage": "https://github.com/daybrush/print-coveralls#readme"
+  "homepage": "https://github.com/daybrush/print-sizes#readme",
+  "dependencies": {
+    "filesize": "^3.6.1"
+  }
 }
